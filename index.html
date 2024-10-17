@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World</title>
+    <style>
+        /* General reset for clean slate */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            color: white;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 1rem;
+        }
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 3rem 4rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(8px);
+            animation: scaleUp 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes scaleUp {
+            0% { transform: scale(0.9); }
+            100% { transform: scale(1); }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .container {
+                padding: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello, World!</h1>
+        <p>Welcome to your beautifully styled webpage!</p>
+    </div>
+</body>
+</html>
